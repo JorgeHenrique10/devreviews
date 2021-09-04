@@ -4,7 +4,7 @@ namespace DevReviews.API.Entities
 {
     public class ProductReview
     {
-        public ProductReview(string author, int rating, string comments, DateTime registeredAt, int productId)
+        public ProductReview(string author, int rating, string comments, int productId)
         {
             Author = author;
             Rating = rating;
@@ -19,5 +19,6 @@ namespace DevReviews.API.Entities
         public string Comments { get; private set; }
         public DateTime RegisteredAt { get; private set; }
         public int ProductId { get; private set; }
+        public Product Product { get; private set; }
     }
 }
